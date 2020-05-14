@@ -5,6 +5,6 @@ public class GreatCircle {
         double x2 = Math.toRadians(Double.parseDouble(args[2]));
         double y2 = Math.toRadians(Double.parseDouble(args[3]));
         double distance = 2*6371.0*Math.asin(Math.sqrt(Math.sin((x2-x1)/2) * Math.sin((x2-x1)/2) + (Math.cos(x1)*Math.cos(x2)*Math.sin((y2-y1)/2)*Math.sin((y2-y1)/2))));
-        System.out.println(distance);
+        System.out.println(distance + " kilometers");
     }
 }
